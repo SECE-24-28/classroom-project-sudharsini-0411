@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Mobile Recharge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Welcome, <span id="userEmail"></span></h2>
+
+    <div class="nav-links">
+        <a href="plans.html" class="plans-btn">View Plans</a>
+        <button id="logoutBtn">Logout</button>
+    </div>
+</div>
+
+<div class="container">
+
+    <h2>Mobile Recharge</h2>
+
+    <form id="recharge-form">
+        <input type="text" id="phone" placeholder="Enter 10-digit Number" maxlength="10" required>
+        
+        <select id="operator">
+            <option>Jio</option>
+            <option>Airtel</option>
+            <option>Vodafone</option>
+            <option>BSNL</option>
+        </select>
+
+        <input type="number" id="amount" placeholder="Enter Amount" required>
+
+        <button type="submit">Recharge Now</button>
+    </form>
+
+    <p id="success-msg"></p>
+
+    <h3>Recharge History</h3>
+
+    <ul id="history-list"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
