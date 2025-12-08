@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name="Sudhar";
+        var age=19;
+        var a=12;
+        var b=45;
+        const pi=3.14;
+        let isvalid=true;
+        let number=[1,2,3,4,5];
+        let person={
+            name:"Sudhar",
+            age:23
+        }
+        console.log("Hello! "+name);
+        console.log(person.name);
+        console.log(number);
+        console.log(number.reverse);
+        console.log(age);
+        console.log(pi);
+        console.log(isvalid);
+
+        //STRING OPERATION//
+        console.log("Upper:",name.toUpperCase());
+        console.log("Lower:",name.toLowerCase());
+        console.log("Length:",name.length);
+        console.log("concatenation:",name+ "Rajendran");
+        //console.log("Template:", Welcome,$ {name});
+
+        //Arithmetic Operation//
+        console.log("Add:",a+b);
+        console.log("sub:",b-a);
+        console.log("mul:",a*b);
+        let subject=["DS","DAA","DBMS","JAVA","DM"];
+        for(let sub of subject){
+            console.log(sub);
+        }
+        let emp={
+              name:"suji",
+              id:123,
+              city:"chennai"
+
+        };
+        for(let key in emp){
+            console.log(emp[key]);
+        }
+    </script>
+</body>
+</html>
